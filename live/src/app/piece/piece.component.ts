@@ -11,7 +11,7 @@ import { Piece } from '../piece'
   template: `
     <div
       data-id="p{{piece.id}}"
-      [ngClass]="piece.create ? 'new' : piece.check ? 'selected' : piece.dead ? 'gray' : ''"
+      [ngClass]="piece.create ? 'new' : piece.dead ? 'gray' : piece.check ? 'selected' : ''"
       (click)="checkPiece()"
     ></div>
   `,
