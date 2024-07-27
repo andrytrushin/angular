@@ -68,7 +68,6 @@ export class FieldComponent {
   calcStep() {
     this.pieces.forEach((pie, idx) => {
       let
-        test,
         i = idx - this.SIDE;
 
       pie.friends = 0;
